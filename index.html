@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assests/css/style.css">
     <link rel="stylesheet" href="./assests/fonts/themify-icons/themify-icons.css">
-    <title>Document</title>
+    <title>The band</title>
 </head>
 <body>
     <div id="main">
         <!-- Begin: Nav -->
         <div id="header">
                 <ul id="nav">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Band</a></li>
-                    <li><a href="">Tour</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#band">Band</a></li>
+                    <li><a href="#tour">Tour</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li>
                         <a href="">
                             More
                             <i class="nav_arrow_down ti-angle-down"></i>
                         </a>
                         <ul class="sub_nav">
-                            <li><a href="">Merchandise</a></li>
-                            <li><a href="">Extras</a></li>
-                            <li><a href="">Media</a></li>
+                            <li><a href="#">Merchandise</a></li>
+                            <li><a href="#">Extras</a></li>
+                            <li><a href="#">Media</a></li>
                         </ul>
                     </li>
                 <!-- End: Nav -->
@@ -46,29 +46,28 @@
 
         <div id="content">
             <!-- About section -->
-            <div class="content_section">
+            <div id="band" class="content_section">
                 <h2 class="section_heading">THE BAND</h2>
                 <p class="section_sub_heading">We love music</p>
                 <p class="about_text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="members_list">
-                    <div class="member_item">
+                <div class="row members_list">
+                    <div class="col col_third text_center">
                         <p class="member_name">Name</p>
                         <img src="/assests/img/band_members/bandmember.jpg" alt="Name" class="member_img">
                     </div>
-                    <div class="member_item">
+                    <div class="col col_third text_center">
                         <p class="member_name">Name</p>
                         <img src="/assests/img/band_members/bandmember.jpg" alt="Name" class="member_img">
                     </div>
-                    <div class="member_item">
+                    <div class="col col_third text_center">
                         <p class="member_name">Name</p>
                         <img src="/assests/img/band_members/bandmember.jpg" alt="Name" class="member_img">
                     </div>
-                    <div class="clear"></div>
                 </div>
             </div>
             
             <!-- Tour section -->
-            <div class="tour_section">
+            <div id="tour" class="tour_section">
                 <div class="content_section">
                     <h2 class="section_heading text_white">TOUR DATES</h2>
                     <p class="section_sub_heading text_white">Remember to book your tickets!</p>
@@ -79,48 +78,95 @@
                         <li>November <span class="quantity">3</span></li>
                     </ul>
                     <!-- Places list -->
-                    <div class="place_list">
-                        <div class="place_item">
+                    <div class="row place_list">
+                        <div class="col col_third">
                             <img src="/assests/img/tour_places/place_1.jpg" alt="New York" class="place_img">
                             <div class="place_content">
                                 <h3 class="place_heading">New York</h3>
                                 <p class="place_time">Fri 27 Nov 2016</p>
                                 <p class="place_descrip">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place_buy_button js_buy_ticket">Buy Tickets</a>
+                                <button class="button js_buy_ticket">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="place_item">
+                        <div class="col col_third">
                             <img src="/assests/img/tour_places/place_2.jpg" alt="Paris" class="place_img">
                             <div class="place_content">
                                 <h3 class="place_heading">Paris</h3>
                                 <p class="place_time">Sat 28 Nov 2016</p>
                                 <p class="place_descrip">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place_buy_button js_buy_ticket">Buy Tickets</a>
+                                <button class="button js_buy_ticket">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="place_item">
+                        <div class="col col_third">
                             <img src="/assests/img/tour_places/place_3.jpg" alt="San Francisco" class="place_img">
                             <div class="place_content">
                                 <h3 class="place_heading">San Francisco</h3>
                                 <p class="place_time">Fri 27 Nov 2016</p>
                                 <p class="place_descrip">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place_buy_button js_buy_ticket">Buy Tickets</a>
+                                <button class="button js_buy_ticket">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="clear"></div>
                     </div>
                 </div>
             </div>
 
-            <!-- Contact section -->
-            <div class="content_section">
+            <!-- Begin: Contact section -->
+            <div id="contact" class="content_section">
                 <h2 class="section_heading">CONTACT</h2>
                 <p class="section_sub_heading">Fan? Drop a note!</p>
+                
+                <div class="row contact_content">
+                    <div class="col col_half contact_infor">
+                        <p>
+                            <i class="ti-location-pin"></i>
+                            Chicago, US
+                        </p>
+                        <p>
+                            <i class="ti-headphone-alt"></i>
+                            Phone: +00 151515
+                        </p>
+                        <p>
+                            <i class="ti-email"></i>
+                            Email: mail@mail.com
+                        </p>
+                    </div>
+                    <div class="col col_half contact_form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col_half">
+                                    <input type="text" name="" placeholder="name" required id="" class="form_control">
+                                </div>
+                                <div class="col col_half">
+                                    <input type="email" name="" placeholder="email" required id="" class="form_control">
+                                </div>
+                            </div>
+                            <div class="row margin_top_8">
+                                <div class="col col_full">
+                                    <input type="text" name="" placeholder="message" required id="" class="form_control">
+                                </div>
+                            </div>
+                            <input class="button margin_top_16 pull_right" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Contact section -->
+
+            <div class="map_section">
+                <img src="/assests/img/map/map_img_1.jpg" alt="map">
             </div>
         </div>
 
         <div id="footer">
-
+            <div class="social_symbols">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-wordpress"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="">w3.css</a></p>
         </div>
     </div>
 
@@ -185,7 +231,7 @@
 
         modal_container.addEventListener('click', function(event) {
             event.stopPropagation();
-        })
+        }) 
     </script>
 </body>
 </html>
