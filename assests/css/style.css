@@ -77,6 +77,10 @@ html{
     margin-top: 16px !important;
 }
 
+.margin_top_32{
+    margin-top: 32px;
+}
+
 /* main */
 
 #main{
@@ -91,6 +95,7 @@ html{
     height: 46px;
     background-color: #000;
     z-index: 1;
+    /* overflow: hidden; */
 }
 
 #nav{
@@ -152,6 +157,14 @@ html{
     font-size: 14px;
 }
 
+#header .menu_mobile_button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .menu_mobile_button,
 #header .search_button
 {
     float: right;
@@ -163,6 +176,15 @@ html{
     cursor: pointer;
 }
 
+#header .menu_mobile_button:hover {
+    background-color: #ccc;
+}
+
+#header .menu_mobile_button:hover .menu_mobile_icon {
+    color: #000;
+}
+
+#header .menu_mobile_icon,
 #header .search_icon{
     color: #fff;
     font-size: 20px;
@@ -179,7 +201,7 @@ html{
     /* min-height: 500px;
     background-color: #333; */
     padding-top: 50%;
-    background: url(/assests/img/slider/slider_2.jpg) top center / cover no-repeat;
+    background: url(../img/slider/slider_2.jpg) top center / cover no-repeat;
     position: relative;
 }
 
@@ -198,23 +220,27 @@ html{
     font-size: 24px;
     font-weight: 500;
     margin-top: 10px;
-
 }
 
 #slider .text_decription{
     margin-top: 25px;
+    text-shadow: 0 0 5px black;
 }
 
 
 #content{
+
 }
 
 #content .content_section{
     width: 800px;
+    max-width: 100%;
     /* width: 100%; */
     padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .section_heading{
@@ -238,7 +264,7 @@ html{
 }
 
 #content .members_list{
-    margin-top: 48px;
+    margin-top: 32px;
     /* overflow: hidden; */
 }
 
@@ -297,7 +323,7 @@ html{
     /* margin-top: 32px;
     margin-left: -8px;
     margin-right: -8px; */
-    margin-top: 32px;
+    margin-top: px;
 }
 
 .place_img{
@@ -339,6 +365,7 @@ html{
     display: inline-block;
     margin-top: 15px;
     border: none;
+    text-align: center;
 }
 
 .button:hover{
@@ -361,6 +388,16 @@ html{
 .contact_infor i[class*="ti-"] {
     width: 30px;
     display: inline-block;
+}
+
+.contact_infor a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact_infor a:hover {
+    color: #101aef;
+    opacity: 1;
 }
 
 .contact_form{
@@ -406,6 +443,7 @@ html{
 #footer .copyright a {
     color: rgba(0, 0, 0, 0.6);
 }
+
 /* script (css) */
 .modal{
     position: fixed;
